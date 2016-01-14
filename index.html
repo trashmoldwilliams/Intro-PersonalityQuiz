@@ -4,24 +4,24 @@
     <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <script src="js/jquery -1.12.0.js"></script>
+    <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Personality Quiz</title>
   </head>
 
   <body>
     <h1>What Star Wars character are you?</h1>
-    <p>Take our quiz and find out which Star Wars character you are?</p>
+    <p id="intro">Take our quiz and find out which Star Wars character you are?</p>
 
     <form id="quiz">
       <h4>
         1. What is your favorite color?
       </h4>
       <div class="radio">
-        <label><input type="radio" name="question1" value="darth">Blue</label>
+        <label><input type="radio" name="question1" value="darth" checked>Blue</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="question1" value="luke">Green</label>
+        <label><input type="radio" name="question1" value="luke" >Green</label>
       </div>
       <div class="radio">
         <label><input type="radio" name="question1" value="leia">Yellow</label>
@@ -30,67 +30,83 @@
         <label><input type="radio" name="question1" value="han">Red</label>
       </div>
 
-      <h4> 2.</h4>
+      <h4> 2.What is your favorite animal?</h4>
       <div class="radio">
-        <label><input type="radio" name="question2"></label>
+        <label><input type="radio" value="darth" name="question2" checked>Dog</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="question2"></label>
+        <label><input type="radio" name="question2" value="leia">Cat</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="question2"></label>
+        <label><input type="radio" name="question2" value="han">Monkey</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="question2"></label>
+        <label><input type="radio" name="question2" value="luke">Pidgeon</label>
       </div>
 
-      <h4>3. Which color</h4>
+      <h4>3. What is your favorite boy band?</h4>
       <div class="radio">
-        <label><input type="radio" name="question3"></label>
+        <label><input type="radio" value="darth" name="question3" checked>One Direction</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="question3"></label>
+        <label><input type="radio" name="question3" value="leia">NSYNC</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="question3"></label>
+        <label><input type="radio" name="question3" value="luke">Backstreet Boys</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="question3"></label>
+        <label><input type="radio" name="question3" value="han">98 Degrees</label>
 
       </div>
-      <h4>4. Which color </h4>
+      <h4>4. What is your favorite food?</h4>
         <div class="radio">
-          <label><input type="radio" name="question4"></label>
+          <label><input type="radio" name="question4" value="darth" checked>Pizza</label>
         </div>
         <div class="radio">
-          <label><input type="radio" name="question4"></label>
+          <label><input type="radio" name="question4" value="luke">Chocolate</label>
         </div>
         <div class="radio">
-          <label><input type="radio" name="question4"></label>
+          <label><input type="radio" name="question4" value="han">Pasta</label>
         </div>
         <div class="radio">
-          <label><input type="radio" name="question4"></label>
+          <label><input type="radio" name="question4" value="leia">Tacos</label>
         </div>
 
-      <h4>5. Which color </h4>
+      <h4>5. What color are your eyes? </h4>
         <div class="radio">
-          <label><input type="radio" name="question5"></label>
+          <label><input type="radio" name="question5" checked value="leia">Green</label>
         </div>
         <div class="radio">
-          <label><input type="radio" name="question5"></label>
+          <label><input type="radio" name="question5" value="luke">Blue</label>
         </div>
         <div class="radio">
-          <label><input type="radio" name="question5"></label>
+          <label><input type="radio" name="question5" value="han">Hazel</label>
         </div>
         <div class="radio">
-          <label><input type="radio" name="question5"></label>
+          <label><input type="radio" name="question5" value="darth">Brown</label>
         </div>
-        <button class="btn btn-primary" type="button" role"submit">Submit</button>
+        <button class="btn btn-primary" role="submit">Submit</button>
     </form>
-
-
-
-
-
+    <div id="luke">
+      <h1>Congratulations! You are...</h1>
+      <a href="#"></a>
+      <h2>Luke Skywalker</h2>
+    </div>
+    <div id="leia">
+      <h1>Congratulations! You are...</h1>
+      <a href="#"></a>
+      <h2>Princess Leia</h2>
+    </div>
+    <div id="han">
+      <h1>Congratulations! You are...</h1>
+      <a href="#"></a>
+      <h2>Han Solo</h2>
+    </div>
+    <div id="darth">
+      <h1>Congratulations! You are...</h1>
+      <a href="#"></a>
+      <h2>Darth Vader</h2>
+    </div>
+    <button class="btn btn-primary" id="reset">Take Again!</button>
   </body>
 </html>
