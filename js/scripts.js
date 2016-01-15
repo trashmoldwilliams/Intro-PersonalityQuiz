@@ -66,7 +66,7 @@ $(function() {
       $('#luke').show();
     }else if (hanscore > leiascore && hanscore > lukescore && hanscore > darthscore) {
       $('#han').show();
-    }else if (darthscore > leiascore && darthscore > lukescore && darthscore > hanscore) {
+    }else {
       $('#darth').show();
     }
 
