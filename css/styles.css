@@ -21,3 +21,8 @@
 img {
   width: 40%;
 }
+
+.jumbotron {
+  background-color: black;
+  color: #ffff66;
+}
